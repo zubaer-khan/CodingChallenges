@@ -9,13 +9,11 @@ function consonantCount(str) {
     // return the number of consonants in the string
     // example: consonantCount('hello', 3)
     
-    // trim() string to remove white spaces
     // split into an array
     // filter array by !includes 'aeiouAEIOU'
     // return the length of the new array
     
-    return str.trim()
-              .split('')
+    return str.split('')
               .filter((x) => 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'.includes(x))
               .length
   }
