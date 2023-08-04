@@ -7,7 +7,6 @@
 
 function isSortedAndHow(array) {
     let nums = [...array]
-    console.log(nums)
     if (array.every((x,i) => x == nums.sort()[i])){
       return 'yes, ascending' 
     }else if(array.every((x,i) => x == nums.sort((a,b) => b - a)[i])){
